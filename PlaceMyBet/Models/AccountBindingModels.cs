@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using Newtonsoft.Json;
 
-namespace Place_my_bet.Models
+namespace WebApplication4.Models
 {
     // Modelos usados como parámetros para las acciones de AccountController.
 

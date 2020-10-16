@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace Place_my_bet.Controllers
+namespace WebApplication4.Controllers
 {
     public class HomeController : Controller
     {

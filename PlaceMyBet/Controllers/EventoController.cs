@@ -4,35 +4,37 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using WebApplication4.Models;
 
 namespace WebApplication4.Controllers
 {
-    [Authorize]
-    public class ValuesController : ApiController
+    public class EventoController : ApiController
     {
-        // GET api/values
+        // GET: api/Evento
         public IEnumerable<string> Get()
         {
             return new string[] { "value1", "value2" };
         }
 
-        // GET api/values/5
-        public string Get(int id)
+        // GET: api/Evento/5
+        public Evento Get(int id)
         {
-            return "value";
+            var repo = new EventoRepository();
+            Evento e = repo.Retrieve();
+            return e;
         }
 
-        // POST api/values
+        // POST: api/Evento
         public void Post([FromBody]string value)
         {
         }
 
-        // PUT api/values/5
+        // PUT: api/Evento/5
         public void Put(int id, [FromBody]string value)
         {
         }
 
-        // DELETE api/values/5
+        // DELETE: api/Evento/5
         public void Delete(int id)
         {
         }

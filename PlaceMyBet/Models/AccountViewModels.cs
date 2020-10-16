@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Place_my_bet.Models
+namespace WebApplication4.Models
 {
     // Modelos devueltos por las acciones de AccountController.
 

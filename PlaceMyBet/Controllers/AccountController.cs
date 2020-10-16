@@ -13,11 +13,11 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.OAuth;
-using Place_my_bet.Models;
-using Place_my_bet.Providers;
-using Place_my_bet.Results;
+using WebApplication4.Models;
+using WebApplication4.Providers;
+using WebApplication4.Results;
 
-namespace Place_my_bet.Controllers
+namespace WebApplication4.Controllers
 {
     [Authorize]
     [RoutePrefix("api/Account")]
